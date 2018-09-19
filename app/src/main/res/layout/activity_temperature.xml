@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/strCelsius"
+        android:inputType="numberSigned|numberDecimal"
+        android:text="@string/strZero" />
+
+    <Button
+        android:id="@+id/bConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strConvert" />
+
+    <TextView
+        android:id="@+id/tvFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strZero"
+        android:textSize="40sp" />
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a9726446.a4_1p.DistanceActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/txtMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:labelFor="@id/etMiles"
+        android:text="@string/strMiles"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etMiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etMiles" />
+
+    <TextView
+        android:id="@+id/txtFeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/strFeet"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etFeet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etFeet"
+        tools:labelFor="@+id/etFeet" />
+
+    <TextView
+        android:id="@+id/txtInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/strInches"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etInches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etInches"
+        tools:labelFor="@+id/etInches" />
+
+    <TextView
+        android:id="@+id/txtMetric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/strZero"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnConvert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnConvert" />
+
+    <EditText
+        android:id="@+id/etMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="@string/strZero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etFeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="@string/strZero"
+        app:layout_constraintStart_toStartOf="@+id/etMiles"
+        app:layout_constraintTop_toBottomOf="@+id/etMiles" />
+
+    <EditText
+        android:id="@+id/etInches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:text="@string/strZero"
+        app:layout_constraintStart_toStartOf="@+id/etFeet"
+        app:layout_constraintTop_toBottomOf="@+id/etFeet" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/strConvert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etInches"
+        app:layout_constraintTop_toBottomOf="@+id/etInches"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/chkMetres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/strInMetres"
+        app:layout_constraintStart_toStartOf="@+id/btnConvert"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+
+</android.support.constraint.ConstraintLayout>

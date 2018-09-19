@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">A4_1P</string>
+    <string name="strTemperature">Temperature</string>
+    <string name="strDistance">Distance</string>
+    <string name="strInstruction">What do you want to convert?</string>
+    <string name="strMiles">Miles</string>
+    <string name="strFeet">Feet</string>
+    <string name="strInches">Inches</string>
+    <string name="strConvert">Convert</string>
+    <string name="strZero" translatable="false">0</string>
+    <string name="strF" translatable="false">F</string>
+    <string name="strInMetres">Show in Metres?</string>
+    <string name="strCelsius">Celsius</string>
+</resources>
